@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" >
     <title>Магазин готовых шаблонов</title>
+    <meta name="keywords" content="Nerds">
+    <meta name="description" content="Магазин готовых шаблонов">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="main-header">
+    <header class="main-header">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="100" height="50" alt="Nёrd`s">
       </a>
-        <nav>
-          <ul>
-           <li class="main-menu-item">
-           <main-menu-item><a href="info.html">Студия</a></main-menu-item>
-           <main-menu-item><a href="clients.html">Клиенты</a></main-menu-item>
-           <main-menu-item><a href="shop.html">Магазин</a></main-menu-item>
-           <main-menu-item><a href="contacts.html">Контакты</a></main-menu-item>
-           <main-menu-item><a href="basket.html">Корзина</a></main-menu-item>
-           </li>
-          </ul>
-        </nav>
-  </header>
-    <main class="container">
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu-item"><a href="info.html" class="main-menu-link">Студия</a></li>
+          <li class="main-menu-item"><a href="clients.html" class="main-menu-link">Клиенты</a></li>
+          <li class="main-menu-item"><a href="shop.html" class="main-menu-link">Магазин</a></li>
+          <li class="main-menu-item"><a href="contacts.html" class="main-menu-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header-basket">Корзина</a>
+    </header>
+    <main class="main-page">
       <section class="gallery">
-        <img src="http://placehold.it/100x100" alt="ВЕБ-САЙТЫ">
-        <h3> ВЕБ-САЙТЫ </h3>
-        <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <p><button type="button">Заказать</button></p>
-      
-       <img src="http://placehold.it/100x100" alt="ПРИЛОЖЕНИЯ">
-       <h3> ПРИЛОЖЕНИЯ </h3>
-       <p> Покорите топ 10 приложений в AppStore и Google Play</p>
-       <p><button type="button">Заказать</button></p>
-
-       <img src="http://placehold.it/100x100" alt="ПРЕЗЕНТАЦИИ">
-       <h3> ПРЕЗЕНТАЦИИ </h3>
-       <p> Вы даже не подозреваете насколько вы изумительны</p>
-       <p><button type="button">Заказать</button></p>
-       </section> 
-    </main>   
+       <ul class="gallery-list">
+          <li class="gallery-item">
+            <div class="gallery-img-wrap">
+              <img src="http://placehold.it/100x100" alt="ВЕБ-САЙТЫ">
+            </div>
+            <h3 class="gallery-title">ВЕБ-САЙТЫ</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button type="button">Заказать</button>
+          </li>
+          <li class="gallery-item">
+          <div class="gallery-img-wrap">
+             <img src="http://placehold.it/100x100" alt="ПРИЛОЖЕНИЯ">
+          </div>
+             <h3 class="gallery-title">ПРИЛОЖЕНИЯ</h3>
+             <p>Покорите топ 10 приложений в AppStore и Google Play</p>
+             <p><button type="button">Заказать</button></p>
+          </li>
+          <li class="gallery-item">
+          <div class="gallery-img-wrap">
+             <img src="http://placehold.it/100x100" alt="ПРЕЗЕНТАЦИИ">
+          </div>
+            <h3 class="gallery-title">ПРЕЗЕНТАЦИИ</h3>
+            <p>Вы даже не подозреваете насколько вы изумительны</p>
+            <p><button type="button">Заказать</button></p>
+          </li>
+       </ul>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="footer-social">
         <a class="social-button" href="#">Вконтакте</a>
         <a class="social-button" href="#">Фейсбук</a>
         <a class="social-button" href="#">Инстаграм</a>
-        <b>Давайте дружить, это выгодно! </b>
-        <p>Скидка 10% для друзей из социальных сетей </p>
+      </div>
+      <div>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
   </body>
