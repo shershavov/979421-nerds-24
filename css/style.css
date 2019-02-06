@@ -1,0 +1,11 @@
+body {
+  font-family: 'MS Sans Serif';
+}
+
+p {
+  color: black;
+}
+
+fieldset {
+  border: none
+}
