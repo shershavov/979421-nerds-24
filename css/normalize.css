@@ -357,8 +357,7 @@ template {
        url('ptsans.ttf') format('truetype');
 }
 
-body 
-{
+body {
   font-family: 'PT Sans';
 }
 
@@ -366,56 +365,18 @@ p {
   color: black;
 }
 
-fieldset 
-{
+fieldset {
   border: none
 }
 
-.flex-container 
-{ 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-  flex-wrap: wrap;
-  align-content: space-between;
-} 
-
-.flex-container div 
-{
-  margin: 0 auto;
-  padding: 10px;
- } 
-
- .flex-container-gallery-index 
- { 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-} 
- 
-.gallery-img
-{
-  margin: 0;
-  padding: 0;
+.gallery_sedona {
+  display: block;
+  width: 50px; 
+  height: 50px; 
 }
 
-
-.gallery-item-SEDONA div,
-.gallery-item-PINKUP div,
-.gallery-item-BARBEDSHOP div,
-.gallery-item-MISHKA div,
-.gallery-item-A-PLUS div,
-.gallery-item-КВАСТ div
-{
-  display: inline-block;
-  flex-direction: column;
-  justify-content: left;
-}
-
-.social-icon 
-{
+.social-icon {
+  /* display: block; */
   float: left;
   width: 50px;
   height: 50px;
@@ -424,12 +385,10 @@ fieldset
   text-align: center;
 }
 
-.social-icon img 
-{
+.social-icon img {
   padding-top: 17px;
 }
 
-.social-icon:hover 
-{
+.social-icon:hover {
   background-color: #ff3333;  
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -38,43 +39,107 @@
           </form> 
           </section>
            <section class="gallery">
-              <p> <img src="http://placehold.it/100x100" alt="SEDONA"> </p>
-                <p>SEDONA </p>
-                <p>Информационный сайт для туристов </p>
-                <button class="button"> 9 900 руб. </button>
-              
-              <p> <img src="http://placehold.it/100x100" alt="PINK UP"> </p>
-                <p>PINK UP </p>
-                <p>Продуктовый лендинг приложений для iOS и Android </p>
-                <button class="button"> 9 900 руб. </button>
-              
-              <p> <img src="http://placehold.it/100x100" alt="BARBEDSHOP"> </p>
-                <p>BARBEDSHOP </p>
-                <p>Сайт салона красоты. Для мужчин, да. </p>
-                <button class="button"> 9 900 руб. </button>
-              
-              <p> <img src="http://placehold.it/100x100" alt="MISHKA"> </p>
-                <p>MISHKA </p>
-                <p>Интернет-магазин вязанных игрушек </p>
-                <button class="button"> 9 900 руб. </button>
-              
-              <p> <img src="http://placehold.it/100x100" alt="A-PLUS"> </p>
-                <p>A-PLUS </p>
-                <p>Лендинг курсов повышения квалификации </p>
-                <button class="button"> 9 900 руб. </button>
-              
-              <p> <img src="http://placehold.it/100x100" alt="КВАСТ"> </p>
-                <p>КВАСТ </p>
-                <p>Промо-сайт производителей крафтового кваса </p>
-                <button class="button"> 9 900 руб. </button>
+            <div class="flex-container">
+
+             <!-- SEDONA -->
+              <div class="gallery-item-SEDONA">
+                 <div>
+                    <a href="#">
+                      <p class="gallery-img"><img src="img/browser.svg" alt="SEDONA Browser"></p> 
+                      <p class="gallery-img"><img src="img/img-sedona.jpg" alt="SEDONA jpg"></p>
+                    </a>  
+                 </div>
+                 <div>
+                  <p class="gallery-Sedona-label" SEDONA></p> 
+                  <p class="gallery-Sedona-info" Информационный сайт для туристов></p> 
+                  <button class="gallery-Sedona-button">9 900 руб.</button> 
+                 </div>
+              </div>  
+
+              <!-- PINK UP -->
+              <div class="gallery-item-PINKUP">
+                <div>
+                  <a href="#">
+                    <p class="gallery-img"><img src="img/browser.svg" alt="PINKUP Browser"></p> 
+                    <p class="gallery-img"><img src="img/img-pink.jpg" alt="PINKUP jpg"></p> 
+                  </a>
+                </div>  
+                <div>  
+                  <p class="gallery-Pinkup-label"PINK UP></p>
+                  <p class="gallery-Pinkup-info" Продуктовый лендинг приложений для iOS и Android></p>
+                  <button class="gallery-Pinkup-button">9 900 руб.</button>
+                </div>
+              </div>           
+
+              <!-- BARBERSHOP -->
+              <div class="gallery-item-BARBEDSHOP">
+                <div>
+                  <a href="#">
+                    <p class="gallery-img"><img src="img/browser.svg" alt="Barbershop Browser"></p> 
+                    <p class="gallery-img"><img src="img/img-barbershop.jpg" alt="BARBEDSHOP"></p>
+                  </a>   
+                </div> 
+                <div>   
+                  <p class="gallery-BARBEDSHOP-label" BARBEDSHOP></p>
+                  <p class="gallery-BARBEDSHOP-info" Сайт салона красоты. Для мужчин, да.></p>
+                  <button class="gallery-BARBEDSHOP-button"> 9 900 руб. </button>
+                </div>  
+              </div>
+
+              <!-- MISHKA -->
+              <div class="gallery-item-MISHKA">
+                <div>
+                  <a href="#">
+                    <p class="gallery-img"><img src="img/browser.svg" alt="Mishka Browser"></p>
+                    <p class="gallery-img"><img src="img/img-mishka.jpg" alt="MISHKA"></p>
+                </a>
+                </div>  
+                <div>
+                  <p class="gallery-mishka-label" MISHKA></p>
+                  <p class="gallery-mishka-info" Интернет-магазин вязанных игрушек></p>
+                  <button class="button"> 9 900 руб. </button>
+                </div>
+              </div>
+
+              <!-- A-PLUS -->
+              <div class="gallery-item-A-PLUS">
+                <div>
+                  <a href="#">
+                    <p class="gallery-img"><img src="img/browser.svg" alt="A-PLUS Browser"></p>
+                    <p class="gallery-img"><img src="img/img-aplus.jpg" alt="A-PLUS"></p>
+                  </a>  
+                </div>
+                <div>  
+                  <p class="gallery-aplus-label" A-PLUS></p>
+                  <p class="gallery-aplus-info" Лендинг курсов повышения квалификации></p>
+                  <button class="button"> 9 900 руб. </button>
+                </div>
+              </div>
+
+              <!-- КВАСТ -->
+              <div class="gallery-item-КВАСТ">
+                <div>
+                  <a href="#">
+                    <p class="gallery-img"><img src="img/browser.svg" alt="KVAST Browser"></p>
+                    <p class="gallery-img"><img src="img/img-kvast.jpg" alt="КВАСТ"></p>
+                  </a>  
+                </div>  
+                <div>
+                  <p class="gallery-kvast-label" КВАСТ></p>
+                  <p class="gallery-kvast-info" Промо-сайт производителей крафтового кваса></p>
+                  <button class="button"> 9 900 руб. </button>
+                </div>
+              </div>
+
+            </div>
            </section> 
     </main>
       <footer class="main-footer">
           <nav>
-            <a href="#">Вконтакте</a>
-            <a href="#">Фейсбук</a>
-            <a href="#">Инстаграм</a>
-          </nav>
+              <a class="social-icon social-vk" href="#"><img src="img/vk-icon.svg"    alt="ВКонтакте"></a>
+              <a class="social-icon social-fb" href="#"><img src="img/fb-icon.svg"    alt="Фейсбук"></a>
+              <a class="social-icon social-inst" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
+            </nav>
            <p>Давайте дружить, это выгодно </p>
            <p>Скидка 10% для друзей из социальных сетей </p>
       </footer>
