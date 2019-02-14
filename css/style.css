@@ -349,17 +349,21 @@ template {
 }
 
 /* Мои исправления */
-@font-face {
-  font-family: 'PT Sans';
-  src: url('ptsans.eot');
-  src: url('ptsans.eot?#iefix') format('embedded-opentype'),
-       url('ptsans.woff') format('woff'),
-       url('ptsans.ttf') format('truetype');
-}
+ @font-face {
+  font-family: 'Roboto';
+  src: url("../font/roboto.woff") format("woff");
+  src: url("../font/roboto.woff2") format("woff2"); 
+  /*
+  src: url("../font/robotobold.woff") format("woff");
+  src: url("../font/robotobold.woff2") format("woff2");
+  src: url("../font/robotomedium.woff") format("woff");
+  src: url("../font/robotomedium.woff2") format("woff2");
+  */
+} 
 
 body 
 {
-  font-family: 'PT Sans';
+  font-family: 'Roboto';
 }
 
 p {
@@ -371,47 +375,189 @@ fieldset
   border: none
 }
 
-.flex-container 
-{ 
+
+.gallery
+{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
   flex-wrap: wrap;
-  align-content: space-between;
-} 
+}
 
-.flex-container div 
-{
-  margin: 0 auto;
-  padding: 10px;
- } 
-
- .flex-container-gallery-index 
- { 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-} 
- 
 .gallery-img
 {
   margin: 0;
   padding: 0;
 }
 
-
-.gallery-item-SEDONA div,
-.gallery-item-PINKUP div,
-.gallery-item-BARBEDSHOP div,
-.gallery-item-MISHKA div,
-.gallery-item-A-PLUS div,
-.gallery-item-КВАСТ div
+.flex-container-gallery-index
 {
-  display: inline-block;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 40px;
+}
+
+.gallery-index-item
+{
+  margin: 0 40px;
+}
+
+.gallery-index-label
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 18;
+  text-align: left;
+  padding-top: 20px; 
+}
+
+.gallery-index-info
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  text-align: left;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+.gallery-index-button1
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  margin: 0;
+  height: 45px;
+  width: 150px;
+  color: white; 
+  background-color: #ff6666;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+}
+
+.gallery-index-button2
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  margin: 0;
+  height: 45px;
+  width: 150px;
+  color: white; 
+  background-color: #00cc66;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+}
+
+.gallery-index-button3
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  margin: 0;
+  height: 45px;
+  width: 150px;
+  color: white; 
+  background-color: #ffcc33;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+}
+
+.gallery-index-button1:hover
+{
+  background-color: #ff3333;
+}
+
+.gallery-index-button1:active
+{
+  background-color: #cc3333;
+  color: #cc9999;
+}
+
+.gallery-index-button2:hover
+{
+  background-color: #00cc66;
+}
+
+.gallery-index-button2:active
+{
+  background-color: #009966;
+  color: #cc9999;
+}
+
+.gallery-index-button3:hover
+{
+  background-color: #ffcc33;
+}
+
+.gallery-index-button3:active
+{
+  background-color: #cc9933;
+  color: #cc9999;
+}
+
+.gallery-item
+{
+  display: flex;
+  position: relative;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.gallery-item-active
+{
+  visibility: hidden; 
+  position: absolute;
+  background-color: #ffffff;
+  top: 62%;
+  width: 100%;
+  height: 38%;
+}
+
+.gallery-item-label
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 18;
+  text-align: center;
+  padding-top: 20px; 
+}
+
+.gallery-item-info
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  text-align: center;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+.gallery-item-button
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  height: 45px;
+  width: 200px;
+  color: white; 
+  background-color: #ff6666;
+  border-radius: 5px;
+  border: none;
+}
+
+.gallery-item-button:hover
+{
+  background-color: #ff3333;
+}
+
+.gallery-item-button:active
+{
+  background-color: #cc3333;
+}
+
+.gallery-item:hover .gallery-item-active
+{
+  visibility: visible;
 }
 
 .social-icon 
@@ -429,7 +575,12 @@ fieldset
   padding-top: 17px;
 }
 
-.social-icon:hover 
+.social-icon:hover
 {
   background-color: #ff3333;  
+}
+
+.social-icon:active
+{
+  background-color: #cc3333;
 }
