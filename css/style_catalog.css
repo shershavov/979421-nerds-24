@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -15,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-fieldset 
-{
-  border: none
-}
 /* ----------- navigator ----------------------------------------- */
 .main-header-logo
 {
@@ -70,6 +65,178 @@ fieldset
 {
   color: black;
   opacity: 0.12;
+}
+
+/* -------------- filter --------------------------- */
+/*
+.filter-item legend {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+   /* width: 260px; */
+  /* margin: 50px auto;  */
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif; 
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+/* --------------- netting --------------------- */
+.filter-netting 
+{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 50%;
+  font-size: 16px;
+}
+
+/* ------------- feature ---------------------------- */
+.filter-feature 
+{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 10%;
+  font-size: 16px;
+}
+
+.filter-feature-button
+{
+  font-family: "Roboto", "arial", sans-serif; 
+  font-size: 16;
+  height: 45px;
+  width: 220px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.filter-feature-button:hover
+{
+  background-color: #dfdfdf;
+}
+
+.filter-feature-button:active
+{
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+}
+
+/* ---------- assort -------------------------- */
+.filter-assort-navigation 
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  width: 100%;
+ }
+
+.filter-assort-navigation img
+{
+  opacity: 0.20;
+}
+
+.filter-assort-navigation p
+{
+  color: black;
+  margin: 20px;
+  opacity: 0.20;
+}
+
+.filter-assort-navigation p:hover,
+.filter-assort-navigation img:hover
+{
+  color: #999999;
+  opacity: 1;
+}
+
+.filter-assort-navigation p:active,
+.filter-assort-navigation img:active
+{
+  color: #333333;
+  opacity: 1;
 }
 
 
@@ -214,11 +381,12 @@ fieldset
   margin-top: 10px;
 }
 
+/* ------------- social ---------------------- */
 .social-icon 
 {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #cccccc;
   border-radius: 50%;
   text-align: center;
@@ -226,25 +394,25 @@ fieldset
 
 .social-vk
 {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-left: 120px;
 }
 
 .social-fb
 {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-left: 20px;
 }
 
 .social-in
 {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-left: 20px;
 }
 
 .social-icon img 
 {
-  padding-top: 17px;
+  padding-top: 20px;
 }
 
 .social-icon:hover
