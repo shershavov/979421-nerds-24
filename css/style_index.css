@@ -17,22 +17,21 @@ a {
  
 /* ------- main header ------- */
 /* ----------- navigator ----------------------------------------- */
-.main-header-logo
-{
-  margin-left: 380px;
+.main-header {
+  position: relative;
+  background-color: #eeeeee;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   font-size: 16px;
-  /* padding-right: 270px; */
   padding-top: 30px;
-  background-color: #eeeeee;
   height: 90px;
-  width: 100%;
-  /* padding-left: 420px; */
+  width: 1200px;
+  margin-top: 40px;
+  margin: 0 auto;  
 }
 
 .site-navigation
@@ -70,11 +69,11 @@ a {
 }
 
 /* ------- slider ---------------- */
-.container {
+.container-slider {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .visually-hidden {
@@ -238,18 +237,22 @@ a {
 }
 
 /* ------- container-item -------- */
-.flex-container-gallery-index
+.flex-container-gallery-item
 {
   display: flex;
   position: relative;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: left;
   flex-wrap: nowrap;
-  margin: 40px;
+  margin-top: 40px;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .gallery-index-item
 {
-  margin: 0 65px;
+  margin-right: 65px;
 }
 
 .gallery-index-label
@@ -347,6 +350,55 @@ a {
   color: #cc9999;
 }
 
+/* ------------- logo ---------------- */
+.container-logo
+{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: left;
+  border-bottom: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+  width: 1200px;
+  margin-top: 40px;
+  margin: auto; 
+  margin-bottom: 40px;
+}
+
+.logo-img img
+{
+  opacity: 0.2;
+}
+
+.logo-item-img
+{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.logo-item-img > img
+{
+  margin-left: 100px;  
+}
+
+.logo-item-img > p
+{
+  padding-right: 40px;  
+}
+
+.logo-img img:hover
+{
+  opacity: 1;
+}
+
+.logo-img img:active
+{
+  opacity: 0.10;
+}
+
+
 /* ------ main footer ---------- */
 .footer
 {
@@ -355,6 +407,7 @@ a {
   top: 20%;
   width: 100%;
   height: 38%;
+  padding: 20px;
 }
 
 .main-footer-map
@@ -362,6 +415,19 @@ a {
   display: flex;
   position: relative;
   justify-content: center;
+}
+
+.main-footer-after-map
+{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .main-footer-social
@@ -372,13 +438,6 @@ a {
   flex-wrap: nowrap;  
 }
 
-.main-footer-after-map
-{
-  display: flex; 
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .main-footer-text
 {
@@ -386,7 +445,7 @@ a {
   position: relative;
   flex-direction: column;
   flex-wrap: nowrap;  
-  margin-left: 150px; 
+  margin-left: 190px; 
 }
 
 .main-footer-text-up
@@ -406,6 +465,7 @@ a {
 }
 
 /* ------------------ social ------------------------------------- */
+
 .social-icon 
 {
   float: left;
@@ -413,13 +473,13 @@ a {
   height: 60px;
   background-color: #cccccc;
   border-radius: 50%;
-  text-align: center;
+  text-align: left;
 }
 
 .social-vk
 {
   margin-top: 50px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 
 .social-fb
@@ -437,6 +497,7 @@ a {
 .social-icon img 
 {
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .social-icon:hover
