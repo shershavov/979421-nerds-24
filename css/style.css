@@ -2,12 +2,12 @@ body
 {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
-  
+  min-width: 1200px; 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  text-align: left;
   color: #000000;
 }
 
@@ -16,10 +16,17 @@ a
   text-decoration: none;
 }
  
-img {
+img 
+{
   max-width: 100%;
   height: auto;
 }
+
+h2, h4
+{
+  text-transform: uppercase;
+}
+
 
 /* ------- main header ------- */
 .main-header 
@@ -34,23 +41,46 @@ img {
   flex-direction: row;
   align-items: flex-start;
   font-size: 16px;
-  padding-top: 31px;
+  padding-top: 30px;
   width: 1200px;
-  margin-top: 40px;
   margin: 0 auto;  
 }
 
-.main-titel
+.main-header-logo
+{
+  margin-top: 20px;
+}
+
+.main-header-logo:hover
+{
+  opacity: 0.8;
+}
+
+.main-header-logo:active
+{
+  opacity: 0.3;
+}
+
+.main-header-article
+{
+  background-color: #eeeeee;
+  margin: 0 auto; 
+  padding-top: 70px; 
+  padding-bottom: 20px; 
+  line-height: 1;
+  min-width: 1200px;
+  min-height: 145px;
+}
+
+.main-title
 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0; 
   font-size: 55px;
   font-weight: 500;
-  background-color: #eeeeee;
-  height: 145px; 
-  margin: 0 auto;
-  padding-top: 93px; 
 }
 
 .main-header-text
@@ -60,13 +90,14 @@ img {
   margin-top: 60px;
 }
 
-/* ----------- navigator ----------------------------------------- */
 
+/* ----------- navigator ----------------------------------------- */
 .site-navigation
 {
   list-style: none;
   padding-top: 50px; 
   padding-left: 201px;
+  text-transform: uppercase; 
 }
 
 .site-navigation-clients
@@ -80,7 +111,8 @@ img {
 
 .site-navigation-studio,
 .site-navigation-clients,
-.site-navigation-shop
+.site-navigation-shop,
+.site-navigation-shop-main
 {
   margin-right: 42px; 
   min-height: 20px;
@@ -91,15 +123,20 @@ img {
   margin-right: 22px;
 }
 
+.site-navigation-shop-main
+{
+  padding-bottom: 10px;
+}
+
 .site-navigation-shop
 {
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff6666;
+  border-bottom: 2px solid #ff6666; 
 }
 
 .site-navigation-contacts
 {
- margin-right: 240px;
+  margin-right: 240px;
 }
 
 .site-navigation a:hover
@@ -109,14 +146,14 @@ img {
 
 .site-navigation a:active
 {
-  color: #000000;
-  opacity: 0.12;
+  color: #cccccc;
 }
 
-.site-navigation a:visited
+.site-navigation a:visited .site-navigation-shop
 {
   border-bottom: 2px solid #ff6666;
 }
+
 
 /* ------- slider ---------------- */
 .container-slider 
@@ -124,7 +161,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-bottom: 62px; 
+  margin-bottom: 75px; 
 }
 
 .visually-hidden 
@@ -189,7 +226,7 @@ img {
 .slider-item 
 {
   display: none;
-  padding-top: 78px;  
+  padding-top: 73px;  
   padding-right: 0;
   padding-bottom: 80px;  
   padding-left: 0;  
@@ -305,28 +342,30 @@ img {
   position: relative;
   flex-direction: row;
   justify-content: left;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 1200px;
   margin: auto; 
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .gallery-index-item
 {
   margin-right: 100px;
+  margin-bottom: 40px;
 }
 
 .gallery-index-item h2
 {
   font-size: 25px;
+  font-weight: 500;
 }
 
 .gallery-index-label
 {
   font-size: 18px;
   text-align: left;
-  margin-top: 25px;
-  margin-bottom: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gallery-index-info
@@ -343,8 +382,8 @@ img {
   margin: 0;
   height: 50px;
   width: 160px;
-  color: white; 
-  background-color: #ff6666;
+  color: #ffffff; 
+  background-color: #fb565a;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -357,8 +396,8 @@ img {
   margin: 0;
   height: 50px;
   width: 160px;
-  color: #eeeeee; 
-  background-color: #00cc66;
+  color: #ffffff; 
+  background-color: #00ca74;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -371,8 +410,8 @@ img {
   margin: 0;
   height: 50px;
   width: 160px;
-  color: #eeeeee; 
-  background-color: #ffcc33;
+  color: #ffffff; 
+  background-color: #efc84a;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -381,36 +420,35 @@ img {
 
 .gallery-index-button-red:hover
 {
-  background-color: #ff3333;
+  background-color: #e74246;
 }
 
 .gallery-index-button-red:active
 {
-  background-color: #cc3333;
-  color: #cc9999;
+  background-color: #d7373b;
 }
 
 .gallery-index-button-green:hover
 {
-  background-color: #00cc66;
+  background-color: #00bc6c;
 }
 
 .gallery-index-button-green:active
 {
-  background-color: #009966;
-  color: #66cc99;
+  background-color: #00aa62;
 }
 
 .gallery-index-button-yellow:hover
 {
-  background-color: #ffcc33;
+  background-color: #eab534;
 }
 
 .gallery-index-button-yellow:active
 {
   background-color: #cc9933;
-  color: #ffcc66;
 }
+
+
 /* --------------- adv -------------------- */
 .container-adv
 {
@@ -418,9 +456,9 @@ img {
   position: relative;
   flex-direction: row;
   justify-content: left;
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #eeeeee;
   width: 1200px;
-  padding-top: 37px;
+  padding-top: 20px;
   margin: auto; 
   padding-bottom: 50px;
 }
@@ -450,11 +488,13 @@ img {
   width: 650px;
 }
 
-.container-adv-left h2
+.container-adv-left-title
 {
-  margin-top: 40px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  padding-top: 50px;
   margin-bottom: 35px;
-  width: 700px;
 }
 
 .container-adv-left-text::before
@@ -472,7 +512,7 @@ img {
 .container-adv-right img
 {
   margin-left: 100px; 
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .container-adv-right-text
@@ -500,7 +540,7 @@ img {
   line-height: 1.2;
   padding-right: 10px;
   margin-bottom: 18px;
-  margin-top: 20px;
+  margin-top: 18px;
   width: 110px;
 }
 
@@ -533,6 +573,7 @@ img {
 {
   font-size: 45px;
   line-height: 1.0;
+  font-weight: 500;
 }
 
 .container-adv-right-digit
@@ -549,6 +590,7 @@ img {
   margin: 0;
 }
 
+
 /* ------------- logo ---------------- */
 .container-logo
 {
@@ -556,33 +598,24 @@ img {
   position: relative;
   flex-direction: row;
   justify-content: left;
-  border-bottom: 2px solid #cccccc;
-  border-top: 2px solid #cccccc;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
   width: 1200px;
-  height: 180px;
+  min-height: 180px;
   margin: auto; 
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 
 .logo-img
 {
-   margin: 0;
-   margin-right: 40px;
+  margin: 0;
+  margin-right: 40px; 
 }
 
 .logo-img img
 {
   opacity: 0.2;
-}
-
-.logo-item-img > img
-{
-  margin-left: 100px;  
-}
-
-.logo-item-img > p
-{
-  padding-right: 40px;  
 }
 
 .logo-img img:hover
@@ -622,7 +655,7 @@ img {
   background-image: url("../img/map-with-marker.jpg");
   background-color: #c1c1c1;
   box-sizing: border-box;
-  width: 1450px; 
+  min-width: 1200px;
   height: 416px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -681,21 +714,25 @@ img {
   vertical-align: top;
   position: relative; 
   flex-direction: column; 
-  margin-left: 105px; 
-  margin-top: 20px;
+  margin-left: 110px; 
+  margin-top: 10px;
   padding: 0%;
+  width: 800px;
 }
 
 .main-footer-text-up
 {
-  padding: 0%; 
+  padding: 0; 
+  margin: 0;
   font-weight: 600;
 }
 
 .main-footer-text p
 {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
   margin-top: 10px;
-  padding: 0%;
 }
 
 .main-footer-text-down
@@ -732,24 +769,19 @@ img {
   background-color: #cccccc;
   border-radius: 50%;
   text-align: center; 
-}
-
-.social-icon.social-vk,
-.social-icon.social-fb,
-.social-icon.social-in
-{
   margin: 0;
   margin-top: 12px;
   margin-right: 10px;
+  margin-left: 0;
 }
-
 
 .main-footer-text-up
 {
   font-size: 36px;
-  margin-top: 25px;
   margin-left: 25px;
   margin-bottom: 15px;
+  line-height: 1.2;
+  max-width: 960px;
 }
 
 .main-footer-text-down
@@ -774,7 +806,6 @@ img {
 .social-fb,
 .social-in
 {
-  margin-left: 10px; 
   margin-top: 20px;
 }
 
@@ -793,16 +824,16 @@ img {
   opacity: 0.30;
 }
 
+
 /* -------------- catalog.css --------------------- */
 /* ----------------- catalog filter -------------------------------- */
-
 .container
 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   font-size: 16px;
-  padding-top: 45px; 
+  padding-top: 43px; 
   width: 1200px;
   margin: auto; 
 }
@@ -847,7 +878,9 @@ img {
   font-size: 16px;
   width: 260px;
   margin-bottom: 20px; 
+  text-transform: uppercase;
 }
+
 
 /*  --------------- catalog main-filter -------------------- */
 .main-filter h2,
@@ -855,6 +888,7 @@ img {
 {
   width: 300px;
 }
+
 
 /* -------------- catalog filter --------------------------- */
 .filter-item 
@@ -952,10 +986,11 @@ img {
   text-align: right;
 }
 
+
 /* --------------- catalog СЕТКА--------------------- */
 .filter-netting
 {
-  margin-top: 58px;
+  margin-top: 55px;
 }
 
 .filter input[type="radio"] 
@@ -970,6 +1005,7 @@ img {
   margin-top: 17px;
   padding-left: 35px;
   cursor: pointer;
+  opacity: 0.4;
 }
 
 .filter input[type="radio"] + label::before 
@@ -978,7 +1014,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4; 
 }
 
 .filter input[type="radio"]:checked + label::before
@@ -987,7 +1022,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4; 
+  color: #a2a9ac;
 }
 
 .filter input[type="radio"]:disabled + label
@@ -999,6 +1034,7 @@ img {
 {
   opacity: 1; 
 }
+
 
 /* --------------- catalog ОСОБЕННОСТИ --------------------- */
 .filter-feature 
@@ -1030,6 +1066,7 @@ img {
   margin-top: 17px;
   padding-left: 35px;
   cursor: pointer; 
+  opacity: 0.4;
 }
 
 .filter input[type="checkbox"] + label::before 
@@ -1038,7 +1075,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
 }
 
 .filter input[type="checkbox"]:checked + label::before
@@ -1047,13 +1083,12 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
 }
 
 .filter input[type="checkbox"]:disabled + label 
 {
   cursor: default;
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 .filter input[type="checkbox"] + label:hover
@@ -1074,9 +1109,11 @@ img {
 .filter button:active 
 {
   background-color: #d5d5d5;
+  outline: none;
   color: #999999;
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
 }
+
 
 /* ---------- catalog assort -------------------------- */
 .filter-assort-navigation 
@@ -1091,20 +1128,20 @@ img {
   margin-top: 0;
  }
 
- .filter-assort-navigation-titel
+ .filter-assort-navigation-title
 {
-   margin-right: 90px;
-   margin-top: 12px;
+  margin-right: 90px;
+  margin-top: 12px;
 }
 
 .filter-assort-navigation-price
 {
-   margin-left: 0px;
+  margin-left: 0px;
 }
 
  .filter-assort-navigation a
 {
- color: #000000;
+   color: #000000;
 }
 
 .filter-assort-navigation-down
@@ -1143,8 +1180,8 @@ img {
   opacity: 1; 
 }
 
-/* ------- catalog gallery ------- */
 
+/* ------- catalog gallery ------- */
 .gallery-img-browser
 {
   margin: 0; 
@@ -1189,15 +1226,19 @@ img {
   background-color: #ececec;
   margin: 0;
   padding: 0;
-  top: 62%;
+  bottom: 0;
   width: 100%;
-  height: 38%;
+  min-height: 38%;
+}
+
+.gallery-item-active a
+{
+  color: #000000;
 }
 
 .gallery-item-label
 {
   text-align: center;
-  padding-top: 10px; 
 }
 
 .gallery-item-info
@@ -1216,11 +1257,12 @@ img {
   height: 45px;
   width: 200px;
   text-align: center;
-  color: #eeeeee; 
+  color: #ffffff; 
   background-color: #ff6666;
   border-radius: 3px;
   border: none;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .gallery-item-button:hover
@@ -1247,8 +1289,9 @@ img {
 
 .gallery-item:hover
 {
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
 
 /* ---------------- catalog PAGE-------------------------- */
 .gallery-page a 
@@ -1265,7 +1308,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   cursor: pointer;
   margin-right: 7px;
   margin-top: 26px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 a.next-page 
@@ -1299,7 +1342,7 @@ a.page-active
   font-size: 16px;
   height: 50px;
   width: 220px;
-  color: #eeeeee; 
+  color: #ffffff; 
   background-color: #ff6666;
   border-radius: 3px;
   border: none;
@@ -1317,20 +1360,21 @@ a.page-active
   color: #cc9999;  
 }
 
+
 /* ----------- modal win -------------- */
 .modal-login-form 
 {
   position: fixed;
-  bottom: 50px; 
-  left: 35%;  
   
   display: none;  
-  
+
+  top: 270px;
+  left: 50%;
+  margin-left: -500px;
   box-sizing: border-box;
   width: 960px;
   height: 590px;
   padding: 33px 101px 49px 99px;
-
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
@@ -1344,6 +1388,11 @@ a.page-active
   margin: auto;
   margin-top: 45px;
   margin-bottom: 52px;
+}
+
+.input
+{
+  border-radius: 10px;
 }
 
 .modal-write-open 
@@ -1381,7 +1430,7 @@ a.page-active
   position: absolute; 
   width: 27px;
   height: 5px;
-  background-color: #fb565a;
+  background-color: #ffcccc;
 }
 
 .modal-login-close::before 
@@ -1401,20 +1450,40 @@ a.page-active
           transform: rotate(45deg);
 }
 
+.modal-login-close
+{
+  color: #ff6666;
+  opacity: 0.3;
+}
+
+.modal-login-close:hover
+{
+  opacity: 1;
+}
+
+.modal-login-close:active
+{
+  opacity: 0.1;
+}
+
 .name-email
 {
   margin-bottom: 30px;
 }
 
-
-.write-us-item:first-child 
+.write-us
 {
-  float: left;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.write-us-item:nth-child(2) 
+.name-email
 {
-  float: right;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .write-us-item input[type="text"],
@@ -1423,6 +1492,7 @@ a.page-active
   width: 358px;
   height: 43px;
   border: 2px solid #d7dcde;
+  border-radius: 2px;
 }
 
 .write-us label 
@@ -1456,6 +1526,7 @@ textarea
   padding: 0;
   overflow: auto;
   border: 2px solid #d7dcde;
+  border-radius: 2px;
   resize: none;
 }
 
@@ -1477,13 +1548,15 @@ textarea
 .write-us textarea:hover 
 {
   border: 2px solid #a2a9ac;
+  border-radius: 2px;
 }
 
 .write-us input:focus,
 .write-us textarea:focus 
 {
   outline: none;
-  border: 2px solid #000000;  
+  border: 2px solid #000000;
+  border-radius: 2px;  
 }
 
 .write-us-button:hover 

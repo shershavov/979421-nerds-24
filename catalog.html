@@ -14,41 +14,41 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="105" alt="Логотип Nёrd`s">
         </a>
-         <nav class="site-navigation">
-           <a class="site-navigation-studio" href="#">СТУДИЯ</a> 
-           <a class="site-navigation-clients" href="#">КЛИЕНТЫ</a> 
-           <a class="site-navigation-shop" href="#">МАГАЗИН</a> 
-           <a class="site-navigation-contacts" href="#">КОНТАКТЫ</a> 
+        <nav class="site-navigation">
+           <a class="site-navigation-studio" href="#">Студия</a> 
+           <a class="site-navigation-clients" href="#">Клиенты</a> 
+           <a class="site-navigation-shop" href="catalog.html">Магазин</a> 
+           <a class="site-navigation-contacts" href="#">Контакты</a> 
            <a class="site-navigation-basket" href="#">
-            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> КОРЗИНА
+            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> Корзина
            </a> 
         </nav>
       </div>
     </header>
-    <article>
-      <h1 class="main-titel">Магазин готовых шаблонов</h1>
+    <article class="main-header-article">
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
     </article>
 
     <main class="container">      
       <section class="filter">      
         <form method="get" action="#">
-          <h2 class="main-filter-titel">СТОИМОСТЬ:</h2>
+          <h2 class="main-filter-title">Стоимость:</h2>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="margin-left: 0%; width: 65%"></div>
+                  <div class="bar"></div>
                 </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">ОТ<input name="min-price" type="text" value="0"></label>
-                <label class="max-price">ДО<input name="max-price" type="text" value="15000"></label>
+                <label class="min-price">От<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">До<input name="max-price" type="text" value="15000"></label>
               </div>
             </div>
 
             <div class="filter-netting">
-              <h2>СЕТКА:</h2>
+              <h2>Сетка:</h2>
               <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
               <input id="fixed" type="radio" name="grid" value="fixed">
@@ -58,7 +58,7 @@
             </div>
 
             <div class="filter-feature">
-              <h2>ОСОБЕННОСТИ:</h2>
+              <h2>Особенности:</h2>
               <input id="slider" type="checkbox" name="features" value="slider" checked>
                 <label for="slider">Слайдер</label>
               <input id="advantages" type="checkbox" name="features" value="advantages">
@@ -69,30 +69,29 @@
                 <label for="gallery">Галерея</label>
               <input id="basket" type="checkbox" name="features" value="basket" disabled>
                 <label for="basket">Корзина</label>
-              <button class="filter-feature-button">ПОКАЗАТЬ</button>
+              <button class="filter-feature-button" type="submit">ПОКАЗАТЬ</button>
             </div>
           </form>
         </section>
         
           <section class="gallery-shop">
             <div class="filter-assort-navigation"> 
-              <h2 class="filter-assort-navigation-titel">СОРТИРОВАТЬ:</h2>
-                <p class="filter-assort-navigation-price"><a href="#">ПО ЦЕНЕ</a></p>
-                <p class="filter-assort-navigation-type"><a href="#">ПО ТИПУ</a></p>
-                <p class="filter-assort-navigation-name"><a href="#">ПО НАЗВАНИЮ</a></p>
+              <h2 class="filter-assort-navigation-title">Сортировать:</h2>
+                <p class="filter-assort-navigation-price"><a href="#">По цене</a></p>
+                <p class="filter-assort-navigation-type"><a href="#">По типу</a></p>
+                <p class="filter-assort-navigation-name"><a href="#">По названию</a></p>
                   <a href="#"><img class="filter-assort-navigation-down" src="img/icon-down-dir.svg" width="10" height="10" alt="стрелка вниз"></a>
                   <a href="#"><img class="filter-assort-navigation-up" src="img/icon-up-dir.svg" width="10" height="10" alt="стрелка вверх"></a>
             </div>
 
-              <div class="gallery-item-shop">
-              
+              <div class="gallery-item-shop">              
               <div class="gallery-item">
                 <a href="#">
                   <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="SEDONA Browser"></p> 
                   <p class="gallery-img"><img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA jpg"></p>
                 </a>
                 <div class="gallery-item-active">  
-                  <h2 class="gallery-item-label">SEDONA</h2>
+                  <a href="#"><h2 class="gallery-item-label">SEDONA</h2></a>
                   <p class="gallery-item-info">Информационный сайт для туристов</p>
                   <button class="gallery-item-button">9 900 руб.</button>
                 </div>
@@ -104,58 +103,58 @@
                   <p class="gallery-img"><img src="img/img-pink.jpg" width="360" height="576" alt="PINKUP jpg"></p> 
                 </a>
                 <div class="gallery-item-active">
-                  <h2 class="gallery-item-label">PINK UP</h2>
+                  <a href="#"><h2 class="gallery-item-label">PINK UP</h2></a>
                   <p class="gallery-item-info">Продуктовый лендинг приложений для iOS и Android</p>
                   <p><button class="gallery-item-button">9 900 руб.</button></p>
                 </div>
               </div>           
 
               <div class="gallery-item">
-                  <a href="#">
-                    <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="Barbershop Browser"></p> 
-                    <p class="gallery-img"><img src="img/img-barbershop.jpg"  width="360" height="576" alt="BARBEDSHOP"></p>
-                  </a>   
-                <div class="gallery-item-active">
-                  <h2 class="gallery-item-label">BARBEDSHOP</h2>
-                  <p class="gallery-item-info">Сайт салона красоты. Для мужчин, да.</p>
-                  <p><button class="gallery-item-button">9 900 руб.</button></p>
-                </div>  
+                <a href="#">
+                 <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="Barbershop Browser"></p> 
+                 <p class="gallery-img"><img src="img/img-barbershop.jpg"  width="360" height="576" alt="BARBEDSHOP"></p>
+                </a>   
+              <div class="gallery-item-active">
+                <a href="#"><h2 class="gallery-item-label">BARBEDSHOP</h2></a>
+                <p class="gallery-item-info">Сайт салона красоты. Для мужчин, да.</p>
+                <p><button class="gallery-item-button">9 900 руб.</button></p>
+              </div>  
               </div>
 
               <div class="gallery-item">
                 <a href="#">
-                  <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="Mishka Browser"></p>
-                  <p class="gallery-img"><img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA"></p>
+                 <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="Mishka Browser"></p>
+                 <p class="gallery-img"><img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA"></p>
                 </a>
-                <div class="gallery-item-active">
-                  <h2 class="gallery-item-label">MISHKA</h2>
-                  <p class="gallery-item-info">Интернет-магазин вязанных игрушек</p>
-                  <p><button class="gallery-item-button">9 900 руб.</button></p>
-                </div>
+              <div class="gallery-item-active">
+                  <a href="#"><h2 class="gallery-item-label">MISHKA</h2></a>
+                 <p class="gallery-item-info">Интернет-магазин вязанных игрушек</p>
+                 <p><button class="gallery-item-button">9 900 руб.</button></p>
+              </div>
               </div>
 
               <div class="gallery-item">
-                  <a href="#">
-                    <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="A-PLUS Browser"></p>
-                    <p class="gallery-img"><img src="img/img-aplus.jpg" width="360" height="576" alt="A-PLUS"></p>
-                  </a>
-                <div class="gallery-item-active">
-                  <h2 class="gallery-item-label">A-PLUS</h2>
-                  <p class="gallery-item-info">Лендинг курсов повышения квалификации</p>
-                  <p><button class="gallery-item-button">9 900 руб.</button></p>
-                </div>
+                <a href="#">
+                 <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="A-PLUS Browser"></p>
+                 <p class="gallery-img"><img src="img/img-aplus.jpg" width="360" height="576" alt="A-PLUS"></p>
+                </a>
+              <div class="gallery-item-active">
+                  <a href="#"><h2 class="gallery-item-label">A-PLUS</h2></a>
+                 <p class="gallery-item-info">Лендинг курсов повышения квалификации</p>
+                 <p><button class="gallery-item-button">9 900 руб.</button></p>
+              </div>
               </div>
 
               <div class="gallery-item">
-                  <a href="#">
-                    <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="KVAST Browser"></p>
-                    <p class="gallery-img"><img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ"></p>
-                  </a>
-                <div class="gallery-item-active">
-                  <h2 class="gallery-item-label">КВАСТ</h2>
-                  <p class="gallery-item-info">Промо-сайт производителя крафтового кваса</p>
-                  <p><button class="gallery-item-button">9 900 руб.</button></p>
-                </div>
+                <a href="#">
+                 <p class="gallery-img-browser"><img src="img/browser.svg" width="360" height="40" alt="KVAST Browser"></p>
+                 <p class="gallery-img"><img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ"></p>
+                </a>
+              <div class="gallery-item-active">
+                  <a href="#"><h2 class="gallery-item-label">КВАСТ</h2></a>
+                 <p class="gallery-item-info">Промо-сайт производителя крафтового кваса</p>
+                 <p><button class="gallery-item-button">9 900 руб.</button></p>
+              </div>
               </div>
             </div>
          
@@ -180,19 +179,19 @@
       </div>
 
       <div class="main-footer-social-bottom">  
-        <a class="social-icon social-vk" href="#"><img class="social-img" src="img/vk-icon.svg" alt="ВКонтакте"></a>
-        <a class="social-icon social-fb" href="#"><img class="social-img" src="img/fb-icon.svg" alt="Фейсбук"></a>
-        <a class="social-icon social-in" href="#"><img class="social-img" src="img/insta-icon.svg" alt="Инстаграм"></a>
+        <a class="social-icon social-vk" href="#"><img class="social-img" src="img/vk-icon.svg" width="26" height="15" alt="ВКонтакте"></a>
+        <a class="social-icon social-fb" href="#"><img class="social-img" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+        <a class="social-icon social-in" href="#"><img class="social-img" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
         <div class="main-footer-text">
           <p class="main-footer-text-up">Давайте дружить, это выгодно!</p>
-          <p class="main-footer-text-down">Скидка 10% для друзей из социальных сетей</p>
+          <p class="main-footer-text-down"> Скидка 10% для друзей из социальных сетей</p>
         </div>
       </div> 
      </footer>
 
      <section class="modal-login-form">
-         <p class="modal-login-label">Напишите нам</p>
-         <button class="modal-login-close" type="button" name="button"></button>
+        <p class="modal-login-label">Напишите нам</p>
+        <button class="modal-login-close" type="button" name="button"></button>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <div class="write-us-item name-email">
           <label for="modal-login-name">Ваше имя:</label>
