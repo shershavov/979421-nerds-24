@@ -380,42 +380,36 @@ h2, h4
 {
   font-size: 16px;
   margin: 0;
-  height: 50px;
   width: 160px;
   color: #ffffff; 
   background-color: #fb565a;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   outline: none;
-  margin: 0;
 }
 
 .gallery-index-button-green
 {
   font-size: 16px;
   margin: 0;
-  height: 50px;
   width: 160px;
   color: #ffffff; 
   background-color: #00ca74;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   outline: none;
-  margin: 0;
 }
 
 .gallery-index-button-yellow
 {
   font-size: 16px;
   margin: 0;
-  height: 50px;
   width: 160px;
   color: #ffffff; 
   background-color: #efc84a;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   outline: none;
-  margin: 0;
 }
 
 .gallery-index-button-red:hover
